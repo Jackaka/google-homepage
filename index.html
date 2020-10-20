@@ -1,6 +1,147 @@
 <html>
-    <header>Google</header>
-    <div>
-        <input id='searchbox' type="search" >
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+    button {
+        height: 35px;
+        width: 132px;
+        margin-top: 20px;
+        border-style: none;
+        border-radius: 3px;
+        background-color: #ebe9e7;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    #sign-in {
+        margin-top: 7px;
+        background-color: rgb(55, 111, 233);
+        width: 70px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .google {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 272px;
+        height: 92px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        height: 40px;
+        padding-left: 15px;
+        width: 550px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #searchbox {
+        background-color: white;
+        color: grey;
+        font-size: 16px;
+        border: 1px solid #dfe1e5;
+        border-radius: 30px;
+    }
+
+    #buttons {
+        /* border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 270px;
+        margin: auto;
+         */
+         grid-area: flexbox;
+        justify-self: center;
+        align-self: center;
+        border: none;
+        padding: 7px 10px;
+        margin-left: 130px;
+    }
+
+
+    footer {
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #f2f2f2;
+        font-size: 14px;
+        color: gray;
+    }
+
+    .container_main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -25px;
+    }
+    .btn1 {
+        margin: 0 25px 0 0;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="#Store">Store</a></li>
+        <li style="float:right;"><a href="#Gmail">Gmail</a></li>
+        <li style="float:right"><a href="#Image">Image</a></li>
+        <button type="submit" id="sign-in" style="float: right;">Sign in</button>
+    </ul>
+    <div class="container_main">
+        <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div>
+            <input id='searchbox' type="search" placeholder="Search Google or Type a URL">
+        </div>
+        <div id='buttons'>
+            <button type="submit" class="btn1">Google Search</button>
+            <button type="submit" class="btn2">I'm Feeling Lucky</button>
+        </div>
     </div>
+    <footer>
+        <li>
+            <a href="#">Advertising</a>
+        </li>
+        <li>
+            <a href="#">Business</a>
+        </li>
+        <li>
+            <a href="#">How Search Works</a>
+        </li>
+    </footer>
+</body>
+
 </html>
